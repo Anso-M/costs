@@ -32,23 +32,39 @@
       },
       "cost": 0,
       "services": []
+    },
+    {
+      "id": "63ef",
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "b321",
+      "name": "Novo projeto",
+      "budget": "2000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Infra"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Desenvolvimento"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Design"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Planejamento"
     }
   ]
