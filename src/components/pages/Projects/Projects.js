@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom"
 import { useState, useEffect } from "react"
 import Message from "../../layout/Message/Message"
 import Container from '../../layout/Container/Container'
+import Loading from "../../layout/Loading/Loading"
 import LinkButton from '../../layout/LinkButton/LinkButton'
 import ProjectCard from "../../project/ProjectCard/ProjectCard"
 import styles from './Projects.module.css'
@@ -9,6 +10,7 @@ import styles from './Projects.module.css'
 function Projects() {
 
     const [projects, setProjects] = useState([])
+    const [removeLoading, setRemoveLoading] = useState(false)
 
     const location = useLocation()
     let message = ''
@@ -17,18 +19,21 @@ function Projects() {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/projects', {
-            method: "GET",
-            headers: {
-                'Content-type': 'application/json'
-            }
-        })
-        .then(resp => resp.json())
-        .then(data => {
-            console.log(data)
-            setProjects(data)
-        })
-        .catch(err => console.log(err))
+        setTimeout(() => {              // setTimeout para simular o carregamento da requisição da api
+            fetch('http://localhost:5000/projects', {
+                method: "GET",
+                headers: {
+                    'Content-type': 'application/json'
+                }
+            })
+            .then(resp => resp.json())
+            .then(data => {
+                console.log(data)
+                setProjects(data)
+                setRemoveLoading(true)
+            })
+            .catch(err => console.log(err))
+        }, 300)
     }, [])
 
     return (
@@ -49,6 +54,10 @@ function Projects() {
                             key={project.id}
                         />
                     ))}
+                    {!removeLoading && <Loading/>}
+                    {removeLoading && projects.length === 0 && (
+                        <p>Não há projetos cadastrados!</p>
+                    )}
             </Container>
         </div>
     )
