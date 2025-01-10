@@ -12,39 +12,12 @@
       "services": []
     },
     {
-      "id": "c294",
-      "name": "meu projeto 3",
-      "budget": "15000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "601a",
-      "name": "meu projeto 4",
-      "budget": "2000",
+      "id": "fa23",
+      "name": "projeto 2",
+      "budget": "10000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "63ef",
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "b321",
-      "name": "Novo projeto",
-      "budget": "2000",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
       },
       "cost": 0,
       "services": []
