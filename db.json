@@ -8,8 +8,39 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": []
+      "cost": 4900,
+      "services": [
+        {
+          "name": "Contratar dev front end",
+          "cost": "1200",
+          "description": "Dev responsável por estilizar as páginas",
+          "id": "def5b10a-81cf-45bc-902a-005fe9dc62f3"
+        },
+        {
+          "name": "Contratar dev front end",
+          "cost": "1200",
+          "description": "Dev responsável por estilizar as páginas",
+          "id": "def5b10a-81cf-45bc-902a-005fe9dc62f3"
+        },
+        {
+          "name": "Contratar dev front end",
+          "cost": "1200",
+          "description": "Dev responsável por estilizar as páginas",
+          "id": "def5b10a-81cf-45bc-902a-005fe9dc62f3"
+        },
+        {
+          "name": "Contratar dev front end",
+          "cost": "1200",
+          "description": "Dev responsável por estilizar as páginas",
+          "id": "def5b10a-81cf-45bc-902a-005fe9dc62f3"
+        },
+        {
+          "name": "Teste",
+          "cost": "100",
+          "description": "Teste",
+          "id": "75643b45-abc1-44e9-88dd-07c88b33f49c"
+        }
+      ]
     },
     {
       "id": "fa23",
