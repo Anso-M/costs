@@ -19,8 +19,21 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 0,
-      "services": []
+      "cost": 200,
+      "services": [
+        {
+          "name": "Serviço 1",
+          "cost": "100",
+          "description": "Faz isso",
+          "id": "a64251c0-5ed3-4745-883f-55c422785a85"
+        },
+        {
+          "name": "Serviço 1",
+          "cost": "100",
+          "description": "Faz isso",
+          "id": "a64251c0-5ed3-4745-883f-55c422785a85"
+        }
+      ]
     }
   ],
   "categories": [
