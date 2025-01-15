@@ -34,14 +34,14 @@ Para rodar este projeto localmente, siga os passos abaixo:
 Para executar e usar as funcionalidades do projeto, siga os passos abaixo:
 
 ### 1. Inicie o servidor da aplicação:
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
 
 ### 2. Inicie o servidor de backend:
-    ```bash
-    npm run backend
-    ```
+   ```bash
+   npm run backend
+   ```
 
 ![](assets/img/Home.png)
 
