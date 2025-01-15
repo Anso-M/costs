@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Costs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto em React desenvolvido para gerenciar custos de projetos de desenvolvimento e serviços contratados para cada um. Ele utiliza o `json-server` para fornecer uma API simulada de backend para testes e desenvolvimento local.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **React**: Biblioteca JavaScript para construir interfaces de usuário.
+- **React Router DOM**: Utilizado para navegação entre diferentes páginas.
+- **React Icons**: Conjunto de ícones para enriquecer a interface.
+- **Json-server**: Simula uma API REST para o backend durante o desenvolvimento.
+- **UUID**: Geração de identificadores únicos universais.
 
-### `npm start`
+## Instalação
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para rodar este projeto localmente, siga os passos abaixo:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Clone o repositório:
+   ```bash
+   git clone https://github.com/Anso-M/costs.git
+   ```
 
-### `npm test`
+### 2. Navegue até a pasta do projeto:
+   ```bash
+   cd costs
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+## Executar o projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para executar e usar as funcionalidades do projeto, siga os passos abaixo:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Inicie o servidor da aplicação:
+    ```bash
+    npm start
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Inicie o servidor de backend:
+    ```bash
+    npm run backend
+    ```
 
-### `npm run eject`
+![](assets/img/Home.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Funcionalidades do projeto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+O projeto **costs** oferece as seguintes funcionalidades para o gerenciamento dos projetos:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 1. **Visualizar todos os projetos**
+   - O usuário pode visualizar uma lista de todos os projetos registrados, que são exibidos de maneira clara e organizada na interface. Basta clicar em **Projetos** na barra de navegação.
+   - Cada card de projeto contém informações como o nome, orçamento e a categoria do projeto.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![](assets/img/Projetos.png)
 
-## Learn More
+### 2. **Visualizar os dados de um projeto**
+   - O usuário pode visualizar os dados de um projeto específico ao clicar em **Editar** no card do mesmo.
+   - Cada projeto contém informações como o nome, orçamento, total utilizado do orçamento (serviços) e a categoria do projeto.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![](assets/img/Projeto.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. **Adicionar serviços ao projeto**
+   - O usuário pode adicionar serviços para cada projeto ao clicar em **Adicionar serviço**. Esses serviços podem ser vistos como tarefas e/ou ações que compõem o projeto como um todo.
+   - Cada serviço contém informações como o nome, custo e a descrição do serviço. O custo do serviço é somado ao campo de total utilizado do projeto.
+   - Se o valor total do orçamento utilizado do projeto somado ao custo de um novo serviço que for adicionado ultrapassar o orçamento total do projeto, não será possível adicioná-lo. Ou seja, se (total utilizado do projeto + custo do novo serviço) > orçamento total do projeto, não será possível adicionar este serviço.
 
-### Code Splitting
+![](assets/img/Adicionar%20serviço.png)
+![](assets/img/Serviços.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 4. **Editar projeto**
+   - O usuário pode editar as informações cadastradas de cada projeto ao clicar em **Editar projeto**.
+   - As informações editáveis são o nome, orçamento e a categoria do projeto.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![](assets/img/Editar%20projeto.png)
